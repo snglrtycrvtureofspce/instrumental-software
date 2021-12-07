@@ -23,8 +23,8 @@ spisok_filmov_noteighteen_yo = (
     'Интерстеллар', 'Начало', 'Унесённые призраками', 'Ford против Ferrari', 'Богемская рапсодия')
 
 def print_genres(dct):
-    for item, amount in dct.items():
-        print("{} ({})".format(item, amount))
+    for genre, number in dct.items():
+        print("{} ({})".format(genre, number))
 genres = {
     "Боевик": 1,
     "Вестерн": 2,
