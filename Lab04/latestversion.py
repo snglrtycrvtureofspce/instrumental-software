@@ -12,8 +12,10 @@ import rich
 '''
 
 init()
-subprocess.call("cls", shell=True)
-cls = subprocess.call("cls", shell=True)
+
+def cls():
+    subprocess.call("cls", shell=True)
+
 current_date = date.today()
 current_time = datetime.now().time()
 spisok_filmov_eighteen_yo = ('Птичий короб', 'Социальная сеть', 'Джентельмены', 'Отряд самоубийц', 'План побега 2')
@@ -111,7 +113,7 @@ while vibor < 1 or vibor > 3:
 
 if vibor == 1:
     sleep(1)
-    subprocess.call("cls", shell=True)
+    cls()
     print(Fore.CYAN + "Заказать билеты можно двумя способами:" + Fore.WHITE)
     print("_____________________________________________________________________")
     print(
@@ -124,6 +126,7 @@ if vibor == 1:
     subprocess.call("cls", shell=True)
     if vibor1 == 1:
         sleep(1)
+        cls()
         vibor11 = int(input("Ваш возраст:"))
         while vibor11 < 1 or vibor11 > 100:
             if vibor11 < 1 or vibor11 > 100:
@@ -131,7 +134,7 @@ if vibor == 1:
                 vibor11 = int(input("Ваш возраст:"))
         if vibor11 >= 18:
             sleep(1)
-            subprocess.call("cls", shell=True)
+            cls()
             print(Fore.CYAN + "Список фильмов" + Fore.RED + " (18+)" + Fore.CYAN + ":" + Fore.WHITE)
             for i in spisok_filmov_eighteen_yo:
                 print(i)
@@ -142,7 +145,7 @@ if vibor == 1:
                     vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
             if vibor111 == 1:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[0])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print("Пять лет назад мир погрузился в хаос: увидев нечто, люди кончают жизнь самоубийством. Женщина "
@@ -161,7 +164,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 2:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[1])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print(
@@ -180,7 +183,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 3:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[2])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print(
@@ -201,7 +204,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 4:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[3])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print(
@@ -217,7 +220,7 @@ if vibor == 1:
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 5:
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[4])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print(
@@ -236,7 +239,7 @@ if vibor == 1:
 
         elif vibor11 < 18:
             sleep(1)
-            subprocess.call("cls", shell=True)
+            cls()
             print(Fore.CYAN + "Список фильмов" + Fore.RED + "(<18)" + Fore.CYAN + ":" + Fore.WHITE)
             print(*spisok_filmov_noteighteen_yo, sep='\n')
             vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
@@ -246,7 +249,7 @@ if vibor == 1:
                     vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
             if vibor111 == 1:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[0])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print("Наше время на Земле подошло к концу, команда исследователей берет на себя самую важную миссию в истории человечества; путешествуя за пределами нашей галактики, чтобы узнать есть ли у человечества будущее среди звезд.")
@@ -261,7 +264,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 2:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[1])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print("Кобб — талантливый вор, лучший из лучших в опасном искусстве извлечения: он крадет ценные секреты из глубин подсознания во время сна, когда человеческий разум наиболее уязвим. Редкие способности Кобба сделали его ценным игроком в привычном к предательству мире промышленного шпионажа, но они же превратили его в извечного беглеца и лишили всего, что он когда-либо любил.")
@@ -276,7 +279,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 3:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[2])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print("Маленькая Тихиро вместе с мамой и папой переезжают в новый дом. Заблудившись по дороге, они оказываются в странном пустынном городе, где их ждет великолепный пир. Родители с жадностью набрасываются на еду и к ужасу девочки превращаются в свиней, став пленниками злой колдуньи Юбабы, властительницы таинственного мира древних богов и могущественных духов.")
@@ -291,7 +294,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 4:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[3])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print("Сюжет повествует о группе американских инженеров и дизайнеров. В 1960-х под руководством конструктора Кэрролла Шелби и при поддержке британского гонщика Кена Майлса они должны были с нуля сделать абсолютно новый спорткар, способный опередить Феррари — непобедимого чемпиона 24-часовой гонки на выносливость Ле-Ман.")
@@ -306,7 +309,7 @@ if vibor == 1:
                     random.randint(10320, 10033200)))
             if vibor111 == 5:
                 sleep(1)
-                subprocess.call("cls", shell=True)
+                cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[4])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
                 print("Чествование группы Queen, их музыки и их выдающегося вокалиста Фредди Меркьюри, который бросил вызов стереотипам и победил условности, чтобы стать одним из самых любимых артистов на планете. Фильм прослеживает головокружительный путь группы к успеху, благодаря их культовым песням и революционному звуку, практически распад коллектива, поскольку образ жизни Меркьюри выходит из-под контроля, и их триумфальное воссоединение накануне концерта Live Aid, ставшим одним из величайших выступлений в истории рок-музыки.")
@@ -322,17 +325,17 @@ if vibor == 1:
             
     elif vibor1 == 2:
         sleep(1)
-        subprocess.call("cls", shell=True)
+        cls()
         print(Fore.GREEN + "Горячая линия: " + Fore.WHITE + "+375(33)358-94-89" + Fore.CYAN + " (МТС)" + Fore.WHITE)
 
 elif vibor == 2:
     sleep(1)
-    subprocess.call("cls", shell=True)
+    cls()
     print_genres(genres)
 
 elif vibor == 3:
     sleep(1)
-    subprocess.call("cls", shell=True)
+    cls()
     print(Fore.CYAN + "Наше приложение специализирауется на всём что связано с киноиндустрией" + Fore.WHITE)
     print("_____________________________________________________________________")
     print(
@@ -344,7 +347,7 @@ elif vibor == 3:
             vibor3 = int(input("Выберите:"))
     if vibor3 == 1:
         sleep(1)
-        subprocess.call("cls", shell=True)
+        cls()
         print(Fore.CYAN + "\nС нами можно связаться:" + Fore.WHITE)
         print("_____________________________________________________________________" + Fore.WHITE)
         print(Fore.GREEN + "Электронная почта: " + Fore.WHITE + "asp1rantzenevich@gmail.com")
@@ -352,13 +355,13 @@ elif vibor == 3:
         print(Fore.GREEN + "Рабочий адрес" + Fore.WHITE + ": " + "Cт.м. " + "Каменная горка")
     elif vibor3 == 2:
         sleep(1)
-        subprocess.call("cls", shell=True)
+        cls()
         print(Fore.CYAN + "\nВакансии:" + Fore.WHITE)
         print("_____________________________________________________________________" + Fore.WHITE)
         print("\nВ данный момент вакансий не существует." + Fore.WHITE)
     elif vibor3 == 3:
         sleep(1)
-        subprocess.call("cls", shell=True)
+        cls()
         print(Fore.CYAN + "\nПравовая информация: " + Fore.WHITE)
         print("_____________________________________________________________________" + Fore.WHITE)
         print(Fore.MAGENTA + "Материалы положения: " + Fore.WHITE)
@@ -388,12 +391,12 @@ elif vibor == 3:
 
     elif vibor3 == 4:
         sleep(1)
-        subprocess.call("cls", shell=True)
+        cls()
         print(Fore.CYAN + "\nРазмещение рекламы:" + Fore.WHITE)
         print("В данный момент заказ рекламы недоступен")
         print("_____________________________________________________________________" + Fore.WHITE)
     elif vibor3 == 5:
         sleep(1)
-        subprocess.call("cls", shell=True)
+        cls()
         print(Fore.CYAN + "\nПользовательское соглашение:" + Fore.WHITE)
         print("_____________________________________________________________________" + Fore.WHITE)
