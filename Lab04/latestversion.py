@@ -110,8 +110,8 @@ while vibor < 1 or vibor > 3:
         vibor = int(input("Выберите:"))
 
 if vibor == 1:
-    subprocess.call("cls", shell=True)
     sleep(1)
+    subprocess.call("cls", shell=True)
     print(Fore.CYAN + "Заказать билеты можно двумя способами:" + Fore.WHITE)
     print("_____________________________________________________________________")
     print(
@@ -326,8 +326,8 @@ if vibor == 1:
         print(Fore.GREEN + "Горячая линия: " + Fore.WHITE + "+375(33)358-94-89" + Fore.CYAN + " (МТС)" + Fore.WHITE)
 
 elif vibor == 2:
-    subprocess.call("cls", shell=True)
     sleep(1)
+    subprocess.call("cls", shell=True)
     print_genres(genres)
 
 elif vibor == 3:
