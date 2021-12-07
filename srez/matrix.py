@@ -1,0 +1,5 @@
+idPosts = int(input("Привет, введи ID поста: "))
+Reasons = str(input("Укажи причину: "))
+FilterCheckbox =  int(input("Введи принудительно или нет 0 - принудительно, 1 - нет: "))
+f = (idPosts,Reasons,FilterCheckbox)
+print(f)
