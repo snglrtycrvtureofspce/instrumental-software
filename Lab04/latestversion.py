@@ -105,11 +105,15 @@ print(
                                                                                                       "жанры фильмов"
                                                                                                       "в кино" +
     Fore.YELLOW + "\n3 - " + Fore.MAGENTA + "О приложении" + Fore.WHITE)
-vibor = int(input("Выберите:"))
+vibor = 0
 while vibor < 1 or vibor > 3:
-    if vibor < 1 or vibor > 3:
-        print("Введите значения ещё раз.")
+    try:
         vibor = int(input("Выберите:"))
+        if vibor < 1 or vibor > 3:
+            print("Введите значения ещё раз.")
+            vibor = int(input("Выберите:"))
+    except ValueError:
+        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
 
 if vibor == 1:
     sleep(1)
@@ -118,31 +122,43 @@ if vibor == 1:
     print("_____________________________________________________________________")
     print(
         Fore.YELLOW + "1 - " + Fore.MAGENTA + "Прямо в приложении" + Fore.YELLOW + "\t2 - " + Fore.MAGENTA + "Позвонив на горячую линию" + Fore.WHITE)
-    vibor1 = int(input("Выберите:"))
+    vibor1 = 0
     while vibor1 < 1 or vibor1 > 2:
-        if vibor1 < 1 or vibor1 > 2:
-            print("Введите значения ещё раз.")
-            vibor1 = int(input("Введите:"))
+        try:
+            vibor1 = int(input("Выберите:"))
+            if vibor1 < 1 or vibor1 > 2:
+                print("Введите значения ещё раз.")
+                vibor1 = int(input("Введите:"))
+        except ValueError:
+            print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
     subprocess.call("cls", shell=True)
     if vibor1 == 1:
         sleep(1)
         cls()
-        vibor11 = int(input("Ваш возраст:"))
+        vibor11 = 0
         while vibor11 < 1 or vibor11 > 100:
-            if vibor11 < 1 or vibor11 > 100:
-                print("Введите корректный возраст.")
+            try:
                 vibor11 = int(input("Ваш возраст:"))
+                if vibor11 < 1 or vibor11 > 100:
+                    print("Введите корректный возраст.")
+                    vibor11 = int(input("Ваш возраст:"))
+            except ValueError:
+                print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
         if vibor11 >= 18:
             sleep(1)
             cls()
             print(Fore.CYAN + "Список фильмов" + Fore.RED + " (18+)" + Fore.CYAN + ":" + Fore.WHITE)
             for i in spisok_filmov_eighteen_yo:
                 print(i)
-            vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
+            vibor111 = 0
             while vibor111 < 1 or vibor111 > 4:
-                if vibor111 < 1 or vibor111 > 4:
-                    print("Введите номер фильма ещё раз")
+                try:
                     vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
+                    if vibor111 < 1 or vibor111 > 4:
+                        print("Введите номер фильма ещё раз")
+                        vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
+                except ValueError:
+                    print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
             if vibor111 == 1:
                 sleep(1)
                 cls()
@@ -155,12 +171,16 @@ if vibor == 1:
                       "опасность.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "8:30" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "14:00" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "20:35" + Fore.WHITE)
-                vibor1111 = int(input("Выберите:"))
+                vibor1111 = 0
                 while vibor1111 < 1 or vibor1111 > 3:
-                    if vibor1111 < 1 or vibor1111 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1111 = int(input("Выберите:"))
-                print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
+                        if vibor1111 < 1 or vibor1111 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1111 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
+                    print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 2:
                 sleep(1)
@@ -174,11 +194,15 @@ if vibor == 1:
                     "несколько лет стали самыми молодыми мультимиллионерами в США.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "8:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "11:50" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "18:45" + Fore.WHITE)
-                vibor1112 = int(input("Выберите:"))
+                vibor1112 = 0
                 while vibor1112 < 1 or vibor1112 > 3:
-                    if vibor1112 < 1 or vibor1112 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1112 = int(input("Выберите:"))
+                        if vibor1112 < 1 or vibor1112 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1112 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 3:
@@ -195,11 +219,15 @@ if vibor == 1:
                     "диаспоры, чернокожих спортсменов и даже русского олигарха.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "13:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "17:00" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "21:45" + Fore.WHITE)
-                vibor1113 = int(input("Выберите:"))
+                vibor1113 = 0
                 while vibor1113 < 1 or vibor1113 > 3:
-                    if vibor1113 < 1 or vibor1113 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1113 = int(input("Выберите:"))
+                        if vibor1113 < 1 or vibor1113 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1113 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 4:
@@ -212,11 +240,15 @@ if vibor == 1:
                     "что их отправляют на выполнение миссии, где они, вероятнее всего, погибнут.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "12:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "17:30" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "22:40" + Fore.WHITE)
-                vibor1114 = int(input("Выберите:"))
+                vibor1114 = 0
                 while vibor1114 < 1 or vibor1114 > 3:
-                    if vibor1114 < 1 or vibor1114 > 3:
-                        print("Выберите ещё раз.")
-                        vibor1114 = int(input("Выберите:"))
+                    vibor1114 = int(input("Выберите:"))
+                    try:
+                        if vibor1114 < 1 or vibor1114 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1114 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 5:
@@ -228,25 +260,34 @@ if vibor == 1:
                     "чтобы выручить напарника и доказать, что для него нет невозможного. Добро пожаловать в АиД!")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "11:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "16:00" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "23:45" + Fore.WHITE)
-                vibor1111 = int(input("Выберите:"))
+                vibor1111 = 0
                 while vibor1114 < 1 or vibor1114 > 3:
-                    if vibor1114 < 1 or vibor1114 > 3:
-                        print("Выберите ещё раз.")
-                        vibor1114 = int(input("Выберите:"))
+                    try:
+                        vibor1111 = int(input("Выберите:"))
+                        if vibor1114 < 1 or vibor1114 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1114 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-
+            else:
+                print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
 
         elif vibor11 < 18:
             sleep(1)
             cls()
             print(Fore.CYAN + "Список фильмов" + Fore.RED + "(<18)" + Fore.CYAN + ":" + Fore.WHITE)
             print(*spisok_filmov_noteighteen_yo, sep='\n')
-            vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
+            vibor111 = 0
             while vibor111 < 1 or vibor111 > 4:
-                if vibor111 < 1 or vibor111 > 4:
-                    print("Введите номер фильма ещё раз")
+                try:
                     vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
+                    if vibor111 < 1 or vibor111 > 4:
+                        print("Введите номер фильма ещё раз")
+                        vibor111 = int(input("Введите номер желаемого желаемый фильм:"))
+                except ValueError:
+                    print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
             if vibor111 == 1:
                 sleep(1)
                 cls()
@@ -255,11 +296,15 @@ if vibor == 1:
                 print("Наше время на Земле подошло к концу, команда исследователей берет на себя самую важную миссию в истории человечества; путешествуя за пределами нашей галактики, чтобы узнать есть ли у человечества будущее среди звезд.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "8:30" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "14:00" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "20:35" + Fore.WHITE)
-                vibor1111 = int(input("Выберите:"))
+                vibor1111 = 0
                 while vibor1111 < 1 or vibor1111 > 3:
-                    if vibor1111 < 1 or vibor1111 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1111 = int(input("Выберите:"))
+                        if vibor1111 < 1 or vibor1111 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1111 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 2:
@@ -270,11 +315,15 @@ if vibor == 1:
                 print("Кобб — талантливый вор, лучший из лучших в опасном искусстве извлечения: он крадет ценные секреты из глубин подсознания во время сна, когда человеческий разум наиболее уязвим. Редкие способности Кобба сделали его ценным игроком в привычном к предательству мире промышленного шпионажа, но они же превратили его в извечного беглеца и лишили всего, что он когда-либо любил.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "8:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "11:50" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "18:45" + Fore.WHITE)
-                vibor1112 = int(input("Выберите:"))
+                vibor1112 = 0
                 while vibor1112 < 1 or vibor1112 > 3:
-                    if vibor1112 < 1 or vibor1112 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1112 = int(input("Выберите:"))
+                        if vibor1112 < 1 or vibor1112 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1112 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 3:
@@ -285,11 +334,15 @@ if vibor == 1:
                 print("Маленькая Тихиро вместе с мамой и папой переезжают в новый дом. Заблудившись по дороге, они оказываются в странном пустынном городе, где их ждет великолепный пир. Родители с жадностью набрасываются на еду и к ужасу девочки превращаются в свиней, став пленниками злой колдуньи Юбабы, властительницы таинственного мира древних богов и могущественных духов.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "13:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "17:00" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "21:45" + Fore.WHITE)
-                vibor1113 = int(input("Выберите:"))
+                vibor1113 = 0
                 while vibor1113 < 1 or vibor1113 > 3:
-                    if vibor1113 < 1 or vibor1113 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1113 = int(input("Выберите:"))
+                        if vibor1113 < 1 or vibor1113 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1113 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 4:
@@ -300,11 +353,15 @@ if vibor == 1:
                 print("Сюжет повествует о группе американских инженеров и дизайнеров. В 1960-х под руководством конструктора Кэрролла Шелби и при поддержке британского гонщика Кена Майлса они должны были с нуля сделать абсолютно новый спорткар, способный опередить Феррари — непобедимого чемпиона 24-часовой гонки на выносливость Ле-Ман.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "12:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "17:30" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "22:40" + Fore.WHITE)
-                vibor1114 = int(input("Выберите:"))
+                vibor1114 = 0
                 while vibor1114 < 1 or vibor1114 > 3:
-                    if vibor1114 < 1 or vibor1114 > 3:
-                        print("Выберите ещё раз.")
+                    try:
                         vibor1114 = int(input("Выберите:"))
+                        if vibor1114 < 1 or vibor1114 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1114 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
             if vibor111 == 5:
@@ -315,22 +372,34 @@ if vibor == 1:
                 print("Чествование группы Queen, их музыки и их выдающегося вокалиста Фредди Меркьюри, который бросил вызов стереотипам и победил условности, чтобы стать одним из самых любимых артистов на планете. Фильм прослеживает головокружительный путь группы к успеху, благодаря их культовым песням и революционному звуку, практически распад коллектива, поскольку образ жизни Меркьюри выходит из-под контроля, и их триумфальное воссоединение накануне концерта Live Aid, ставшим одним из величайших выступлений в истории рок-музыки.")
                 print(
                     Fore.CYAN + "Свободное время:" + Fore.YELLOW + "\n1 - " + Fore.LIGHTCYAN_EX + "11:00" + Fore.YELLOW + "\n2 - " + Fore.LIGHTCYAN_EX + "16:00" + Fore.YELLOW + "\n3 - " + Fore.LIGHTCYAN_EX + "23:45" + Fore.WHITE)
-                vibor1111 = int(input("Выберите:"))
+                vibor1111 = 0
                 while vibor1114 < 1 or vibor1114 > 3:
-                    if vibor1114 < 1 or vibor1114 > 3:
-                        print("Выберите ещё раз.")
-                        vibor1114 = int(input("Выберите:"))
+                    try:
+                        vibor1111 = int(input("Выберите:"))
+                        if vibor1114 < 1 or vibor1114 > 3:
+                            print("Выберите ещё раз.")
+                            vibor1114 = int(input("Выберите:"))
+                    except ValueError:
+                        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
+            else:
+                print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
+        else:
+            print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
             
     elif vibor1 == 2:
         sleep(1)
         cls()
         print(Fore.GREEN + "Горячая линия: " + Fore.WHITE + "+375(33)358-94-89" + Fore.CYAN + " (МТС)" + Fore.WHITE)
+    else:
+        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
 
 elif vibor == 2:
     sleep(1)
     cls()
+    print(Fore.CYAN + "В данный момент у нас такой список жанров: " + Fore.WHITE)
+    print("_____________________________________________________________________")
     print_genres(genres)
 
 elif vibor == 3:
@@ -340,11 +409,15 @@ elif vibor == 3:
     print("_____________________________________________________________________")
     print(
         Fore.YELLOW + "1 - " + Fore.MAGENTA + "Связь" + Fore.YELLOW + "\t2 - " + Fore.MAGENTA + "Вакансии" + Fore.YELLOW + "\t3 - " + Fore.MAGENTA + "Правовая информация" + Fore.YELLOW + "\t4 - " + Fore.MAGENTA + "Размещение рекламы" + Fore.YELLOW + "\t5 - " + Fore.MAGENTA + "Пользовательское соглашение" + Fore.WHITE)
-    vibor3 = int(input("Выберите:"))
+    vibor3 = 0
     while vibor3 < 1 or vibor3 > 5:
-        if vibor3 < 1 or vibor3 > 5:
-            print("Введите значения ещё раз.")
+        try:
             vibor3 = int(input("Выберите:"))
+            if vibor3 < 1 or vibor3 > 5:
+                print("Введите значения ещё раз.")
+                vibor3 = int(input("Выберите:"))
+        except ValueError:
+            print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
     if vibor3 == 1:
         sleep(1)
         cls()
@@ -400,3 +473,8 @@ elif vibor == 3:
         cls()
         print(Fore.CYAN + "\nПользовательское соглашение:" + Fore.WHITE)
         print("_____________________________________________________________________" + Fore.WHITE)
+    else:
+        print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
+
+else:
+    print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
