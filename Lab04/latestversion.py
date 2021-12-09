@@ -31,12 +31,11 @@ genres = {
     "Ужасы": 6,
 }
 
-
+cls()
 root = Tk()
 root.geometry("600x600")
 root.title("Необходимо авторизироваться в нашем приложении:")
 
-cls()
 def registration():
     text = Label(text="Для входа в систему необходимо зарегистрироваться")
     text_login = Label(text="Придумайте логин:")
