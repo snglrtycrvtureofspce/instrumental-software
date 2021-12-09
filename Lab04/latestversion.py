@@ -1,23 +1,20 @@
 import random
 import os
 from colorama import *
-from datetime import *
+import datetime
 from time import sleep
 from tkinter import*
 from tkinter import messagebox
 import pickle
 import subprocess
-'''
-import rich
-'''
 
 init()
 
 def cls():
     subprocess.call("cls", shell=True)
 
-current_date = date.today()
-current_time = datetime.now().time()
+date = datetime.datetime.now()
+
 spisok_filmov_eighteen_yo = ('Птичий короб', 'Социальная сеть', 'Джентельмены', 'Отряд самоубийц', 'План побега 2')
 spisok_filmov_noteighteen_yo = (
     'Интерстеллар', 'Начало', 'Унесённые призраками', 'Ford против Ferrari', 'Богемская рапсодия')
@@ -39,6 +36,7 @@ root = Tk()
 root.geometry("600x600")
 root.title("Необходимо авторизироваться в нашем приложении:")
 
+cls()
 def registration():
     text = Label(text="Для входа в систему необходимо зарегистрироваться")
     text_login = Label(text="Придумайте логин:")
@@ -97,7 +95,7 @@ root.mainloop()
 sleep(2)
 print(Fore.GREEN + "Приветствую вас в приложении КиноКос =D" + Fore.WHITE)
 sleep(2)
-print(Fore.CYAN + "Дата и время: " + Fore.WHITE + str(current_date) + " -- " + str(current_time) + Fore.WHITE)
+print(Fore.CYAN + "Дата и время: " + Fore.WHITE + ("{:%d/%m/%Y %H:%M}".format(date)) + Fore.WHITE)
 sleep(2)
 print("_____________________________________________________________________")
 print(
@@ -271,8 +269,6 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            else:
-                print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
 
         elif vibor11 < 18:
             sleep(1)
@@ -383,8 +379,6 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            else:
-                print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
         else:
             print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
             
