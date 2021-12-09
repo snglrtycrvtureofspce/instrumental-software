@@ -33,7 +33,7 @@ genres = {
 
 cls()
 root = Tk()
-root.geometry("600x600")
+root.geometry("700x700")
 root.title("Необходимо авторизироваться в нашем приложении:")
 
 def registration():
@@ -179,7 +179,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                     print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 2:
+            elif vibor111 == 2:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[1])
@@ -202,7 +202,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 3:
+            elif vibor111 == 3:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[2])
@@ -227,7 +227,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 4:
+            elif vibor111 == 4:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[3])
@@ -248,7 +248,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 5:
+            elif vibor111 == 5:
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[4])
                 print(Fore.LIGHTBLUE_EX + "Краткое описание фильма:" + Fore.WHITE)
@@ -302,7 +302,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 2:
+            elif vibor111 == 2:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[1])
@@ -321,7 +321,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 3:
+            elif vibor111 == 3:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[2])
@@ -340,7 +340,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 4:
+            elif vibor111 == 4:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[3])
@@ -359,7 +359,7 @@ if vibor == 1:
                         print("Произошли технические неполадки." + Fore.RED + "\nError404" + Fore.WHITE)
                 print(Fore.LIGHTGREEN_EX + "Ваш уникальный номер билета " + Fore.WHITE + "№:" + str(
                     random.randint(10320, 10033200)))
-            if vibor111 == 5:
+            elif vibor111 == 5:
                 sleep(1)
                 cls()
                 print(Fore.MAGENTA + "Вы выбрали: " + Fore.WHITE + spisok_filmov_eighteen_yo[4])
