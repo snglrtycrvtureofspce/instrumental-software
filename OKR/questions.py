@@ -14,7 +14,7 @@ def get_multiplier(unit):
         print("Создать программу, которая вычисляет сумму элементов массива, которые являются степенями пятерки и индексы которых есть нечетные числа.")
         my_array = array('i',[])
         for i in my_array:
-            inout = my_array[]
+            input = my_array[]
         for i in my_array:
             print(my_array[i])
             
