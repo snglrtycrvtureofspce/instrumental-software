@@ -1,23 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="13fbd7b8-fe52-47d9-9c8f-00eb8c89337a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/InstrumentalSoftware.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/discord.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/OKR/questions.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srez/matrix.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srez/srez2021python.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/srez/unitmnmulti.py" beforeDir="false" />
+    <list default="true" id="520def99-7a7a-4f47-89b1-560689977f99" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab02/zadanie1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab02/zadanie2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie6.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab03/zadanie7.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab04/base.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab04/latestversion.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab04/practice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab04/practicebaseofpasswords.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -25,34 +35,58 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="258zqONEcTZVjjEba5dvv5zMsfx" />
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectId" id="25qOrWPXjDIGgXM2ly0qL5vsx2e" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="InstrumentalSoftware" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Labs/Lab01" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/Labs/Lab01/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="13fbd7b8-fe52-47d9-9c8f-00eb8c89337a" name="Changes" comment="" />
-      <created>1644923692383</created>
+      <changelist id="520def99-7a7a-4f47-89b1-560689977f99" name="Changes" comment="" />
+      <created>1646251349175</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1644923692383</updated>
-      <workItem from="1644923695689" duration="19000" />
-      <workItem from="1644923722325" duration="15000" />
-      <workItem from="1644923739536" duration="52000" />
-      <workItem from="1644923804854" duration="90000" />
-      <workItem from="1644923908500" duration="2000" />
+      <updated>1646251349175</updated>
     </task>
     <servers />
-  </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
   </component>
 </project>
