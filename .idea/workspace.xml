@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="520def99-7a7a-4f47-89b1-560689977f99" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/InstrumentalSoftware.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/InstrumentalSoftware.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Labs/Lab04/base.txt" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab04/base.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Labs/Lab16/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/Labs/Lab16/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,7 +208,7 @@
       <workItem from="1648472392973" duration="909000" />
       <workItem from="1648482456040" duration="1315000" />
       <workItem from="1648996077213" duration="30000" />
-      <workItem from="1649407982159" duration="6327000" />
+      <workItem from="1649407982159" duration="7270000" />
     </task>
     <servers />
   </component>
@@ -218,7 +217,7 @@
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/InstrumentalSoftware$Unnamed.coverage" NAME="Unnamed Coverage Results" MODIFIED="1646252351111" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
-    <SUITE FILE_PATH="coverage/InstrumentalSoftware$main.coverage" NAME="main Coverage Results" MODIFIED="1649425506437" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs/Lab16" />
+    <SUITE FILE_PATH="coverage/InstrumentalSoftware$main.coverage" NAME="main Coverage Results" MODIFIED="1649426433688" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs/Lab16" />
     <SUITE FILE_PATH="coverage/InstrumentalSoftware$zadanie1.coverage" NAME="zadanie1 Coverage Results" MODIFIED="1646252434302" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs/Lab03" />
     <SUITE FILE_PATH="coverage/InstrumentalSoftware$latestversion.coverage" NAME="latestversion Coverage Results" MODIFIED="1649425284633" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Labs/Lab04" />
     <SUITE FILE_PATH="coverage/InstrumentalSoftware$xd.coverage" NAME="xd Coverage Results" MODIFIED="1646402939650" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/Practice" />

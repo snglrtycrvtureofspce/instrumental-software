@@ -77,17 +77,18 @@ def print_rectangle(value):
                     edgecolor='black',
                     facecolor='pink',
                     fill=True
-                ))
+                )
+            )
 
             plt.show()
 
             patches.Rectangle(
-                (first_rectangle.d, first_rectangle.d),
-                1,
-                2,
-                edgecolor='blue',
-                facecolor='red',
-                fill=True
+                    (first_rectangle.d, first_rectangle.d),
+                    1,
+                    2,
+                    edgecolor='blue',
+                    facecolor='red',
+                    fill=True
             )
         case "2":
             sleep(1)
